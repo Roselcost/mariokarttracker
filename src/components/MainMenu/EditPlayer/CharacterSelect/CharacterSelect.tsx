@@ -27,7 +27,7 @@ const CharacterSelect: React.FC<Props> = ({ onChange, selectedCharacter }) => {
               className={`${classes.img} ${
                 selectedCharacter === character && classes.selected
               }`}
-              src={`src/assets/charicons/${character}.png`}
+              src={`charicons/${character}.png`}
             ></img>
           ))}
         </div>

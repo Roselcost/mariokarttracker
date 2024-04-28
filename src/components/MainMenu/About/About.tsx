@@ -46,8 +46,8 @@ const About = () => {
               In the latest game, every character from the main series except 4
               are playable. The ones that are missing are Donkey Kong Jr.,
               Paratroopa, R.O.B and Honey Queen. They can't be selected in this
-              app because the icons for the 4 remaining characters wouldn't
-              look as nice as the other ones 🥲
+              app because the icons for the 4 remaining characters wouldn't look
+              as nice as the other ones 🥲
             </li>
             <li>
               This is intended to be used with a laptop or a tablet, not with a
@@ -67,7 +67,7 @@ const About = () => {
               onClick={() =>
                 window.open("https://github.com/Roselcost/mariokarttracker")
               }
-              icon={"src/assets/utils/github.svg"}
+              icon={"utils/github.svg"}
               label="Github"
             ></Button>
           </div>

@@ -52,11 +52,11 @@ const Scoreboard: React.FC<Props> = ({
                     value={player.position}
                   ></InputText>
                 ) : (
-                  <img src={`src/assets/numbers/${player.position}.png`}></img>
+                  <img src={`numbers/${player.position}.png`}></img>
                 )}
               </div>
               <div className={classes.character}>
-                <img src={`src/assets/charicons/${player.character}.png`}></img>
+                <img src={`charicons/${player.character}.png`}></img>
               </div>
               <span className={classes.nickname}>{player.nickname}</span>
               <span className={classes.score}>{edit ? "-" : player.score}</span>

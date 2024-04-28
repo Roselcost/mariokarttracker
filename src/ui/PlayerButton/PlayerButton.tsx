@@ -39,11 +39,11 @@ const PlayerButton: React.FC<Props> = ({
         className={classes.image}
         src={
           !character
-            ? "src/assets/utils/default.png"
-            : `src/assets/characters/${altPic ? "alt-" : ""}${character}.png`
+            ? "utils/default.png"
+            : `characters/${altPic ? "alt-" : ""}${character}.png`
         }
         onError={({ currentTarget }) => {
-          currentTarget.src = `src/assets/utils/default.png`;
+        currentTarget.src = `utils/default.png`;
         }}
       ></img>
     </div>

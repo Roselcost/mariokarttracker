@@ -53,7 +53,7 @@ const EditPlayer = () => {
         <div className={classes.header}>
           <div className={classes.flag}>
             <div className={classes.flagbg}></div>
-            <img src="src/assets/utils/mushroom.png"></img>
+            <img src="utils/mushroom.png"></img>
           </div>
           <h2 className={classes.driverlicense}>DRIVER LICENSE</h2>
           <span className={classes.mushroomkingdom}>Mushroom Kingdom</span>
@@ -62,12 +62,12 @@ const EditPlayer = () => {
           <div className={classes.picture}>
             <img
               onError={({ currentTarget }) => {
-                currentTarget.src = `src/assets/utils/default.png`;
+                currentTarget.src = `utils/default.png`;
               }}
               src={
                 !currentPlayer.character
-                  ? `src/assets/utils/default.png`
-                  : `src/assets/characters/${
+                  ? `utils/default.png`
+                  : `characters/${
                       currentPlayer.altPic ? "alt-" : ""
                     }${currentPlayer.character}.png`
               }

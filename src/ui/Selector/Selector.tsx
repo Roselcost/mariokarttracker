@@ -48,7 +48,7 @@ const Selector: React.FC<Props> = ({
             }`}
             htmlFor={label + option.name}
           >
-            {option.img && <img src={"src/assets/covers/" + option.img}></img>}
+            {option.img && <img src={"covers/" + option.img}></img>}
 
             <div className={option.img && classes["img-label"]}>
               <span>{option.name}</span>

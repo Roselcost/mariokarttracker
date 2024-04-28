@@ -78,8 +78,8 @@ const CircuitControl: React.FC<Props> = ({
           <img
             src={
               circuits[currentCircuit]?.name
-                ? `src/assets/circuits/${circuits[currentCircuit]?.name}.jpg`
-                : `src/assets/utils/nocircuit.png`
+                ? `circuits/${circuits[currentCircuit]?.name}.jpg`
+                : `utils/nocircuit.png`
             }
           ></img>
         </div>

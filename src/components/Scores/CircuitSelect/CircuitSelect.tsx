@@ -48,7 +48,7 @@ const CircuitSelect: React.FC<Props> = ({ currentCircuit }) => {
                 className={classes.circuit}
               >
                 <span className={classes["circuit-label"]}>{circuitName}</span>
-                <img src={`src/assets/circuits/${circuitName}.jpg`}></img>
+                <img src={`circuits/${circuitName}.jpg`}></img>
               </div>
             ))}
         </div>

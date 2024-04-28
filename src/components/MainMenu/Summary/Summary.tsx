@@ -31,7 +31,7 @@ const Summary: React.FC = () => {
                 <div key={player.id} className={classes.character}>
                   <div className={classes.icon}>
                     <img
-                      src={`src/assets/charicons/${player.character}.png`}
+                      src={`charicons/${player.character}.png`}
                     ></img>
                   </div>
                   <div className={classes["player-name"]}>
@@ -44,7 +44,7 @@ const Summary: React.FC = () => {
               ))}
             </div>
             <div className={classes.cover}>
-              <img src={`src/assets/covers/${game}.png`}></img>
+              <img src={`covers/${game}.png`}></img>
             </div>
           </div>
         </div>
