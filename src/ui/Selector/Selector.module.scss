@@ -1,0 +1,90 @@
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: calc(100% - 130px);
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 8px;
+  height: 32px;
+  box-sizing: border-box;
+  width: 80px;
+  font-size: 14px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--darkGrey),
+    var(--black)
+  );
+  position: relative;
+  transition-duration: 0.2s;
+}
+
+.label:hover {
+  transition: none;
+  border: 1px solid var(--gradientLightblue);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--gradientLightblue),
+    var(--gradientBlue)
+  );
+  color: var(--white);
+
+  .img-label {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--gradientLightblue),
+      var(--gradientBlue)
+    );
+    color: var(--white);
+  }
+}
+
+.checked,
+input[type="radio"]:checked + .label,
+input[type="checkbox"]:checked + .label {
+  border: 1px solid var(--gradientLightblue);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--gradientLightblue),
+    var(--gradientBlue)
+  );
+  color: var(--white);
+
+  .img-label {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--gradientLightblue),
+      var(--gradientBlue)
+    );
+    color: var(--white);
+  }
+}
+
+.cover {
+  height: 120px;
+  width: 92px;
+  overflow: hidden;
+
+  img {
+    height: 120px;
+  }
+}
+
+.img-label {
+  background-color: var(--translucidBlack2);
+  z-index: 1;
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

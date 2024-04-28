@@ -1,0 +1,17 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.label {
+  width: 130px;
+  text-align: start;
+  padding-left: 12px;
+}

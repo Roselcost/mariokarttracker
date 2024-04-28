@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh - 150px);
+}
+
+.content {
+  overflow: auto;
+  margin: 8px 0;
+  max-width: 1000px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.text {
+  font-size: 16px;
+
+  li {
+    text-align: start;
+  }
+}
+
+.h2 {
+  font-family: "Teko";
+  font-size: 42px;
+}

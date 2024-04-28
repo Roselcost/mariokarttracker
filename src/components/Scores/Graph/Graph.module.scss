@@ -1,0 +1,25 @@
+.label {
+  font-size: 25px;
+  font-family: "Teko";
+  border-bottom: 1px solid var(--white);
+}
+
+.center {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh - 150px);
+}
+
+.content {
+  overflow: auto;
+  margin: 8px 0;
+  padding: 8px 0;
+  max-width: 100vw;
+}

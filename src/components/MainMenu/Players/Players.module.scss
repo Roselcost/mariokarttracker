@@ -1,0 +1,16 @@
+.container {
+  margin: 60px 0;
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (max-width: 700px) {
+  .players {
+    gap: 0px;
+  }
+}

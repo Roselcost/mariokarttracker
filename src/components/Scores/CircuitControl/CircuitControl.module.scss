@@ -1,0 +1,54 @@
+.circuit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 300px;
+}
+
+.circuit-controls {
+  display: flex;
+  gap: 20px;
+  margin: 16px;
+  flex-direction: column;
+}
+
+.circuit {
+  box-shadow: 3px 5px 15px 0px var(--translucidBlack);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 304px;
+  height: 172px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.circuit:hover {
+  transform: scale(1.05);
+}
+
+.circuit-label {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--translucidBlack2);
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-family: "Teko";
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}

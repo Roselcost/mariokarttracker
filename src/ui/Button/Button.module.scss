@@ -1,0 +1,65 @@
+.button {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: linear-gradient(to right, var(--darkGrey), var(--darkestGrey));
+  border: 1px solid var(--grey);
+  box-shadow: 3px 5px 3px var(--translucidBlack);
+  transform: skew(-5deg);
+  font-weight: 600;
+  height: 40px;
+  font-family: "Teko";
+}
+
+.button:hover {
+  background: linear-gradient(
+    to right,
+    var(--gradientLightblue),
+    var(--gradientBlue)
+  );
+  border: 1px solid var(--gradientLightblue);
+  animation: glowing 2s infinite;
+}
+
+.icon {
+  width: 16px;
+  filter: invert(1);
+}
+
+.danger:hover {
+  background: linear-gradient(
+    to right,
+    var(--gradientLightred),
+    var(--gradientRed)
+  );
+  border: 1px solid var(--gradientLightred);
+  animation: glowing-danger 2s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px var(--gradientBlue);
+  }
+  50% {
+    box-shadow: 0 0 15px var(--gradientBlue), 0 0 15px var(--gradientBlue);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--gradientBlue);
+  }
+}
+
+@keyframes glowing-danger {
+  0% {
+    box-shadow: 0 0 10px var(--gradientRed);
+  }
+  50% {
+    box-shadow: 0 0 15px var(--gradientRed), 0 0 15px var(--gradientRed);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--gradientRed);
+  }
+}

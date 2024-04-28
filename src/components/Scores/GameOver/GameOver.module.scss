@@ -1,0 +1,59 @@
+.scoreboard {
+  width: 400px;
+  padding: 12px;
+  max-height: 470px;
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh - 150px);
+}
+
+.content {
+  overflow: auto;
+  margin: 8px 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.positions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 32px;
+
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.first {
+  transform: translateY(-50px);
+}
+
+.icon {
+  font-size: 70px;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    padding-left: 12px;
+    font-family: "Teko";
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fade-in-up 0.2s ease-in forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-opacity {
+  animation: fade-opacity 0.2s ease-out forwards;
+}
+
+@keyframes fade-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-back {
+  animation: fade-back 0.2s ease-out forwards;
+}
+
+@keyframes fade-back {
+  from {
+    transform: translate(50px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.animate-forward {
+  animation: fade-forward 0.2s ease-out forwards;
+}
+
+@keyframes fade-forward {
+  from {
+    transform: translate(-50px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.animate-score {
+  animation: score-forward 0.4s ease-out forwards;
+}
+
+@keyframes score-forward {
+  from {
+    transform: skew(-5deg) translate(-50px);
+  }
+  to {
+    transform: skew(-5deg) translate(0);
+  }
+}

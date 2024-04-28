@@ -1,0 +1,58 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--grey);
+  background-image: linear-gradient(
+    to right,
+    var(--darkestGrey),
+    var(--darkerGrey)
+  );
+  border-radius: 4px;
+  align-items: center;
+  font-size: 20px;
+  padding: 12px;
+  height: 30px;
+  transform: skew(-5deg);
+  font-family: "Teko";
+  margin-bottom: 20px;
+}
+
+.first {
+  background-image: linear-gradient(to right, var(--darkGrey), var(--gold));
+}
+.second {
+  background-image: linear-gradient(to right, var(--darkGrey), var(--silver));
+}
+.third {
+  background-image: linear-gradient(to right, var(--darkGrey), var(--bronze));
+}
+
+.position {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+
+  img {
+    height: 100%;
+  }
+}
+
+.character {
+  background-color: var(--translucidBlack);
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+
+  img {
+    height: 100%;
+  }
+}
+
+.nickname {
+  width: calc(100% - 300px);
+}
+
+.score {
+  width: 48px;
+}

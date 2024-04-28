@@ -1,0 +1,150 @@
+.driverlicensecard {
+  background-image: linear-gradient(to bottom right, #1c1c1c, #0a0a0a);
+  width: 613px;
+  height: 386px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 3px 5px 15px 0px var(--translucidBlack);
+  border: 1px solid #323232;
+}
+
+@media (max-width: 700px) {
+  .driverlicensecard {
+    transform: scale(0.6);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  height: 76px;
+  background-image: radial-gradient(
+    at top right,
+    hsl(33, 0%, 4%),
+    hsl(37, 0%, 11%)
+  );
+  border-bottom: 1px solid #454545;
+}
+
+.flag {
+  width: 90px;
+  height: 60px;
+  margin: 0 0 0 28px;
+  border: 1px solid var(--darkGrey);
+  background-color: rgb(111, 19, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  border: 1px solid #454545;
+
+  img {
+    position: absolute;
+    height: 50%;
+  }
+}
+
+.flagbg {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+}
+
+.driverlicense {
+  font-size: 48px;
+  transform: translateY(5px);
+  font-family: "Teko";
+}
+
+.mushroomkingdom {
+  font-family: Courier;
+  color: #454545;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.picture {
+  width: 130px;
+  height: 160px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #454545;
+  background-color: hsla(0, 0%, 5%, 0.44);
+
+  img {
+    height: 100%;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: monospace;
+  text-shadow: 3px 3px 2px var(--black);
+}
+
+.field {
+  display: flex;
+}
+
+.label {
+  width: 100px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.input input {
+  font-family: monospace;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.decorations {
+  position: absolute;
+  width: 100%;
+  top: 260px;
+  left: 0;
+
+  .line {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 20px;
+  }
+
+  .vline {
+    margin: 40px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 20px;
+    transform: rotate(-60deg) translateY(120px) translateX(150px);
+  }
+}
+
+.warning {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 300px;
+  margin: 20px 60px;
+}
+
+.warning-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

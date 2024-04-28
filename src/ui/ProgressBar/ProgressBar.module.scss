@@ -1,0 +1,15 @@
+.progress-bar {
+  width: 300px;
+  border: 1px solid var(--gradientLightblue);
+  border-top: 1px solid var(--gradientLightblue);
+  border-bottom: 1px solid var(--gradientLightblue);
+  border-radius: 8px;
+  overflow: hidden;
+  transform: skew(-20deg);
+  background-color: var(--translucidBlack);
+}
+
+.progress {
+  height: 12px;
+  background: linear-gradient(to bottom, var(--ice), var(--gradientBlue));
+}

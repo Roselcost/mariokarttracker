@@ -1,0 +1,22 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px 0;
+  gap: 40px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+@media (max-width: 1300px) {
+  .circuitControl {
+    order: -1;
+  }
+  .cards {
+    align-items: center;
+  }
+}

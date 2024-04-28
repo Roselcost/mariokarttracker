@@ -1,0 +1,12 @@
+[
+  { "id": "8deluxe", "name": "8 + DLCs", "img": "8deluxe.png" },
+  { "id": "8", "name": "8", "img": "8.png" },
+  { "id": "7", "name": "7", "img": "7.png" },
+  { "id": "wii", "name": "Wii", "img": "wii.png" },
+  { "id": "ds", "name": "DS", "img": "ds.png" },
+  { "id": "doubledash", "name": "Double Dash!!", "img": "doubledash.png" },
+  { "id": "supercircuit", "name": "Super Circuit", "img": "supercircuit.png" },
+  { "id": "64", "name": "64", "img": "64.png" },
+  { "id": "supermk", "name": "Super MK", "img": "supermk.png" },
+  { "id": "tour", "name": "Tour", "img": "tour.png" }
+]

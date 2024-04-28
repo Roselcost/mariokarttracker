@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh - 150px);
+}
+
+.content {
+  overflow: auto;
+  margin: 8px 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.characters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px;
+}
+
+.character {
+  display: flex;
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right,
+    var(--darkGrey),
+    var(--darkestGrey)
+  );
+  box-shadow: 3px 5px 15px 0px var(--translucidBlack);
+}
+
+.icon {
+  background-color: var(--grey);
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.cover {
+  border-radius: 8px;
+  height: 250px;
+  margin: 32px;
+  overflow: hidden;
+  transform: rotate(5deg);
+  animation: glowing 2s infinite;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.player-name {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nickname {
+  color: var(--lighterGrey);
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px var(--gradientBlue);
+  }
+  50% {
+    box-shadow: 0 0 25px var(--gradientBlue), 0 0 25px var(--gradientBlue);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--gradientBlue);
+  }
+}

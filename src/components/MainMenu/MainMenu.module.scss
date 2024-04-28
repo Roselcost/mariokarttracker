@@ -1,0 +1,21 @@
+.start {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(bottom, var(--gradientBlue), var(--ice));
+  -webkit-text-stroke: 2px var(--gradientLightblue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-button {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
