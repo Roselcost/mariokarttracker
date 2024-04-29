@@ -9,12 +9,12 @@ function App() {
   return (
     <>
       {activeRoute.includes(Route.scores) && (
-        <div className="animate-opacity">
+        <div className="animate-opacity main">
           <Scores></Scores>
         </div>
       )}
       {activeRoute.includes(Route.main) && (
-        <div className="animate-opacity">
+        <div className="animate-opacity main">
           {activeRoute.includes(Route.main) && <MainMenu></MainMenu>}
         </div>
       )}

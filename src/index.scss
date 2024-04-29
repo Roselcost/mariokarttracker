@@ -19,6 +19,14 @@
   src: url("/fonts/Teko-VariableFont_wght.ttf");
 }
 
+button {
+  color: rgb(214, 214, 214);
+}
+
+button:disabled {
+  color: rgb(105, 105, 105);
+}
+
 body {
   min-width: 320px;
   --white: rgb(214, 214, 214);

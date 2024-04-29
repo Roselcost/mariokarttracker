@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .animate-up {
   opacity: 0;
   transform: translateY(40px);
