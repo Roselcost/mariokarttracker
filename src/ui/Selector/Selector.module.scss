@@ -5,6 +5,12 @@
   width: calc(100% - 130px);
 }
 
+@media (max-width: 700px) {
+  .options {
+    width: calc(100% - 80px);
+  }
+}
+
 .label {
   display: flex;
   justify-content: center;

@@ -15,3 +15,9 @@
   text-align: start;
   padding-left: 12px;
 }
+
+@media (max-width: 700px) {
+  .label {
+    width: 80px;
+  }
+}
