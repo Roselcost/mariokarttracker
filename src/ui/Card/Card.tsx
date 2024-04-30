@@ -16,7 +16,7 @@ const Card: React.FC<Props> = ({ children, title, width }) => {
       </div>
       <div
         className={classes.content}
-        style={{ maxWidth: "80vw", width: width }}
+        style={{ maxWidth: "85vw", width: width }}
       >
         {children}
       </div>

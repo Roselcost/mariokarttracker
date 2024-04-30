@@ -44,7 +44,7 @@ const Scoreboard: React.FC<Props> = ({
                   <InputText
                     min={1}
                     max={12}
-                    special={true}
+                    position={true}
                     onChange={(value: number) => {
                       onChange &&
                         onChange({ player: player.id, position: value });

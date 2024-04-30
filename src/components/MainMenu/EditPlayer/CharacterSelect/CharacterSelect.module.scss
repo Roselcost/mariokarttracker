@@ -27,13 +27,6 @@
 }
 
 .container {
-  width: 600px;
   max-height: calc(100dvh - 150px);
   overflow: auto;
-}
-
-@media (max-width: 700px) {
-  .container {
-    width: 320px;
-  }
 }

@@ -7,14 +7,14 @@ interface Props {
   onChange?: (value: any) => void | {};
   min?: number;
   max?: number;
-  special?: boolean;
+  position?: boolean;
 }
 
 const InputText: React.FC<Props> = ({
   label,
   value = "",
   onChange,
-  special,
+  position,
   min,
   max,
 }) => {
@@ -38,8 +38,11 @@ const InputText: React.FC<Props> = ({
           setState(val);
           onChange && onChange(val);
         }}
-        className={`${classes.input} ${special && classes["current-position"]}`}
+        className={`${classes.input} ${
+          position && classes["current-position"]
+        }`}
         type="text"
+        inputMode={position ? 'numeric' : "text"}
       ></input>
     </div>
   );
