@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   z-index: 2;
   backdrop-filter: blur(8px);
@@ -14,7 +14,7 @@
 
 .content {
   z-index: 5;
-  max-height: 90vh;
+  max-height: 90dvh;
 }
 
 .container {

@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-height: calc(100vh - 150px);
+  max-height: calc(100dvh - 150px);
 }
 
 .content {
@@ -17,6 +17,15 @@
   margin: 8px 0;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.podium {
+  max-width: 100%;
+  overflow: auto hidden;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -52,6 +61,7 @@
   align-items: center;
 
   span {
+    text-wrap: nowrap;
     padding-left: 12px;
     font-family: "Teko";
     font-size: 32px;
